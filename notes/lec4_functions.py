@@ -12,7 +12,7 @@
 #     return remainder == 0
 
 # is_even_with_return(3) 
-# print(is_even_with_return(3) )
+# print(is_even_with_return(5) )
 
 # def is_even_without_return( i ):
 #     """ 
@@ -25,7 +25,7 @@
 # is_even_without_return(3)
 # print(is_even_without_return(3) )
 
-# Simple is_even function definition
+# # Simple is_even function definition
 # def is_even( i ):
 #     """ 
 #     Input: i, a positive int
@@ -34,7 +34,7 @@
 #     remainder = i % 2
 #     return remainder == 0
 
-# # Use the is_even function later on in the code
+# # # Use the is_even function later on in the code
 # print("All numbers between 0 and 20: even or not")
 # for i in range(20):
 #     if is_even(i):
@@ -93,10 +93,10 @@
 # ## EXAMPLE: returning function objects
 # ## Python Tutor link: http://www.pythontutor.com/visualize.html#code=def%20f(%29%3A%0A%20%20%20%20def%20x(a,%20b%29%3A%0A%20%20%20%20%20%20%20%20return%20a%2Bb%0A%20%20%20%20return%20x%0A%20%20%20%20%0Aval%20%3D%20f(%29(3,4%29%0Aprint(val%29%0A&cumulative=false&curInstr=0&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false
 # #########################
-# # def f():
-# #     def x(a, b):
-# #         return a+b
-# #     return x
+# def f():
+#     def x(a, b):
+#         return a+b
+#     return x
     
 # # the first part, f(), returns a function object
 # # then apply that function with parameters 3 and 4
@@ -135,16 +135,16 @@
 # ## EXAMPLE: hader scope example from slides
 # ## Python Tutor link: http://www.pythontutor.com/visualize.html#code=def%20g(x%29%3A%0A%20%20%20%20def%20h(%29%3A%0A%20%20%20%20%20%20%20%20x%20%3D%20'abc'%0A%20%20%20%20x%20%3D%20x%20%2B%201%0A%20%20%20%20print('in%20g(x%29%3A%20x%20%3D',%20x%29%0A%20%20%20%20h(%29%0A%20%20%20%20return%20x%0A%0Ax%20%3D%203%0Az%20%3D%20g(x%29&cumulative=false&curInstr=0&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false
 # #########################
-# # def g(x):
-# #     def h():
-# #         x = 'abc'
-# #     x = x + 1
-# #     print('in g(x): x =', x)
-# #     h()
-# #     return x
+# def g(x):
+#     def h():
+#         x = 'abc'
+#     x = x + 1
+#     print('in g(x): x =', x)
+#     h()
+#     return x
 
-# # x = 3
-# # z = g(x)
+# x = 3
+# z = g(x)
 
 
 # #########################
