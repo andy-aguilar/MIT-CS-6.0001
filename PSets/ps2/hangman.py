@@ -382,8 +382,8 @@ def hangman_with_hints(secret_word):
       user_input = input("Please guess a letter ").lower()
       while len(user_input) != 1 or user_input not in get_available_letters(letters_guessed, True):
         (warnings, guesses_left, letters_guessed, user_input) = handle_warnings(warnings, guesses_left, letters_guessed, user_input)
-
-      letters_guessed.append(user_input)
+      if user_input != "*":
+        letters_guessed.append(user_input)
       if is_word_guessed(secret_word, letters_guessed):
         print(f"Good guess: {get_guessed_word(secret_word, letters_guessed)}")
         print("\n-----------------------------------------------\n")
