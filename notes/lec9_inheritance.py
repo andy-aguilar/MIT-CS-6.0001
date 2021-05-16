@@ -44,7 +44,7 @@ c.set_name("fluffy")
 print(c)
 c.speak()
 print(c.get_age())
-#a.speak() # error because there is no speak method for Animal class
+# a.speak() # error because there is no speak method for Animal class
 
     
 #################################
@@ -78,6 +78,7 @@ print(p2.get_age())
 print(p1)
 p1.speak()
 p1.age_diff(p2)
+Person.age_diff(p1, p2)
 
 
 #################################
